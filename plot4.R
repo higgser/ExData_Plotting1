@@ -5,6 +5,7 @@ zipFile <- "household_power_consumption.zip"
 dataFile <- "household_power_consumption.txt"
 fromDate = as.Date("2007-02-01")
 toDate = as.Date("2007-02-02")
+Sys.setlocale("LC_TIME", "English")
 
 # download and unzip data file
 if (!file.exists(dataFile)) {
